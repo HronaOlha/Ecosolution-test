@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Header from './Header/Header';
 import Main from './Main/Main';
-// import Values from './components/Values/Values';
+import Values from './Values/Values';
 // import Electricity from './components/Electricity/Electricity';
 // import Cases from './components/Cases/Cases';
 // import Faq from './components/Faq/Faq';
@@ -37,8 +37,8 @@ function App() {
     <>
       <Header deviceType={deviceType} />
       <Main />
-      {/* <Values deviceType={deviceType} />
-      <Electricity />
+      <Values deviceType={deviceType} />
+      {/* <Electricity />
       <Cases deviceType={deviceType} />
       <Faq />
       <Contact />
