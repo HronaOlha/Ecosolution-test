@@ -5,8 +5,8 @@ import Main from './Main/Main';
 import Values from './Values/Values';
 import Electricity from './Electricity/Electricity';
 import Cases from './Cases/Cases';
-// import Faq from './components/Faq/Faq';
-// import Contact from './components/Contact/Contact';
+import Faq from './Faq/Faq';
+import Contact from './Contact/Contact';
 // import Footer from './components/Footer/Footer';
 
 function App() {
@@ -40,9 +40,9 @@ function App() {
       <Values deviceType={deviceType} />
       <Electricity />
       <Cases deviceType={deviceType} />
-      {/* <Faq />
+      <Faq />
       <Contact />
-      <Footer /> */}
+      {/* <Footer /> */}
     </>
   );
 }
