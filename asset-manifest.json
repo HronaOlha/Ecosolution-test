@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Ecosolution-test/static/js/main.ae253643.js",
+    "main.js": "/Ecosolution-test/static/js/main.f035ef5e.js",
     "static/media/worker-by-solar-panels-desk.png": "/Ecosolution-test/static/media/worker-by-solar-panels-desk.e116f892caf85530cfbf.png",
     "static/media/wind-farms-desk.png": "/Ecosolution-test/static/media/wind-farms-desk.f5ce6a656f12b1e7287a.png",
     "static/media/wind-turbine-desk.png": "/Ecosolution-test/static/media/wind-turbine-desk.8e1f3fa407c8a7d49834.png",
@@ -18,9 +18,9 @@
     "static/media/emblem.svg": "/Ecosolution-test/static/media/emblem.d20ccdf9d8331a477f8f05b76cdb4dbc.svg",
     "static/media/ecosolution.svg": "/Ecosolution-test/static/media/ecosolution.5230cb5c917679492e74a619f842019d.svg",
     "index.html": "/Ecosolution-test/index.html",
-    "main.ae253643.js.map": "/Ecosolution-test/static/js/main.ae253643.js.map"
+    "main.f035ef5e.js.map": "/Ecosolution-test/static/js/main.f035ef5e.js.map"
   },
   "entrypoints": [
-    "static/js/main.ae253643.js"
+    "static/js/main.f035ef5e.js"
   ]
 }
