@@ -1,113 +1,62 @@
-# React homework template
+Terms of reference
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+# Frontend test task
 
-## Создание репозитория по шаблону
+Ecosolution Landing page
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+## Landing page template
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+[Template](https://www.figma.com/file/pTbhAbEXjsofeQHmtIE2tK/Ecosolution?type=design&node-id=145%3A1533&mode=dev)
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+### Terms of reference
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+1. Header
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+   - Fixed. Contains the logo, burger menu, Get in touch (except for the mobile
+     version).
+   - When scrolling, the header changes color (see ui-kit).
+   - When you click on Get in touch, it smoothly scrolls to the Contact Us
+     section.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+2. Burger-menu
+   - Contains the close button, navigation menu, social networks.
+   - Each menu item should be clickable and smoothly scroll to the corresponding
+     section on the page when you click on it.
+   - The height of the burger menu should be full screen, the indentation from
+     the edges of the screen at the bottom is similar to the indentation at the
+     top as shown in the layout.
+   - On a tablet, the burger menu looks similar to the desktop version.
+3. Main
+   - When you click on Learn more, you will be taken to the Cases section.
+4. About (Values)
+   - Use the CSS Grid algorithm when laying out the list of values.
+   - Do not show photos on mobile, only values.
+5. Electricity
+   - To get extra points, instead of static numbers, make an automatic counter,
+     +1 per second. This task is optional.
+6. Cases
+   - An endless slider.
+   - You can change the slide by clicking on the appropriate buttons or by
+     dragging and dropping.
+   - When you click on a button, one slide is switched.
+7. FAQ.
+   - By default, the first answer is open.
+   - Only one answer can be open at a time.
+   - When you click on Contact Us, the Contact Us section scrolls smoothly.
+8. Contact Us
+   - The form must be validated.
+   - The Full name, E-mail, Phone fields are required, the Message field is
+     optional.
+9. Footer
+   - Contains an arrow that, when clicked, smoothly scrolls to the Main section.
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+### Acceptance criteria
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
-
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
-
-## Подготовка к работе
-
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
-
-## Деплой
-
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+- The layout is fixed in rh.
+- Layout is semantic and valid, accessibility will be a bonus (a11y).
+- Adaptive and cross-browser layout - mobile from 360px to 480px (rubber layout,
+  should stretch), tablet - 768px, desktop - 1280px.
+- Use the Mobile first approach.
+- The code should be clean, with formatting preserved. We recommend using
+  ESLint/Prettier.
+- The code is divided into separate components.
