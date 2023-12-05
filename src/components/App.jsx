@@ -7,7 +7,7 @@ import Electricity from './Electricity/Electricity';
 import Cases from './Cases/Cases';
 import Faq from './Faq/Faq';
 import Contact from './Contact/Contact';
-// import Footer from './components/Footer/Footer';
+import Footer from './Footer/Footer';
 
 function App() {
   const [deviceType, setDeviceType] = useState('mobile');
@@ -42,7 +42,7 @@ function App() {
       <Cases deviceType={deviceType} />
       <Faq />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

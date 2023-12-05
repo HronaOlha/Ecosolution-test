@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactSection = styled.div`
   @media screen and (${({ theme }) => theme.media.tablet}) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "list contactForm";
+    grid-template-areas: 'list contactForm';
     grid-column-gap: 24px;
   }
   @media screen and (${({ theme }) => theme.media.desktop}) {
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 48px;
-    grid-template-areas: "list list list list contactForm contactForm contactForm contactForm";
+    grid-template-areas: 'list list list list contactForm contactForm contactForm contactForm';
   }
 `;
 
@@ -87,6 +87,10 @@ export const ContactIcon = styled.svg`
 
   fill: transparent;
   transition: stroke 400ms ease;
+
+  &:hover {
+    stroke: ${({ theme }) => theme.colors.mainGreen};
+  }
 
   @media screen and (${({ theme }) => theme.media.desktop}) {
     height: 24px;
