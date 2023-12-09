@@ -11,13 +11,11 @@ Ecosolution Landing page
 ### Terms of reference
 
 1. Header
-
    - Fixed. Contains the logo, burger menu, Get in touch (except for the mobile
      version).
    - When scrolling, the header changes color (see ui-kit).
    - When you click on Get in touch, it smoothly scrolls to the Contact Us
      section.
-
 2. Burger-menu
    - Contains the close button, navigation menu, social networks.
    - Each menu item should be clickable and smoothly scroll to the corresponding
