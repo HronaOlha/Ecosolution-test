@@ -11,7 +11,7 @@ import ContactForm from '../ContactForm/ContactForm';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" aria-label="contacts section">
       <ContactTitle>Contact us</ContactTitle>
       <ContactSection>
         <ContactList>
@@ -41,7 +41,11 @@ const Contact = () => {
           </ContactItem>
           <ContactItem>
             <h3>Address:</h3>
-            <a href="https://www.google.com/maps/place/%D0%A8%D0%BE%D1%82%D0%B0+%D0%A0%D1%83%D1%81%D1%82%D0%B0%D0%B2%D0%B5%D0%BB%D1%96+7+%D0%AF/@49.8310939,24.0326283,17z/data=!3m1!4b1!4m6!3m5!1s0x473addf4d3884e33:0x85f58dee013939bd!8m2!3d49.8310905!4d24.0352032!16s%2Fg%2F11vf1gnnzq?authuser=0&entry=ttu">
+            <a
+              href="https://www.google.com/maps/place/%D0%A8%D0%BE%D1%82%D0%B0+%D0%A0%D1%83%D1%81%D1%82%D0%B0%D0%B2%D0%B5%D0%BB%D1%96+7+%D0%AF/@49.8310939,24.0326283,17z/data=!3m1!4b1!4m6!3m5!1s0x473addf4d3884e33:0x85f58dee013939bd!8m2!3d49.8310905!4d24.0352032!16s%2Fg%2F11vf1gnnzq?authuser=0&entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ContactIcon>
                 <use href={sprite + '#map'} />
               </ContactIcon>
@@ -51,13 +55,13 @@ const Contact = () => {
           <ContactItem>
             <h3>Social Networks:</h3>
             <Socials>
-              <a href="/">
-                <ContactIcon>
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <ContactIcon aria-label="facebook">
                   <use href={sprite + '#facebook'} />
                 </ContactIcon>
               </a>
-              <a href="/">
-                <ContactIcon>
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <ContactIcon aria-label="instagram">
                   <use href={sprite + '#instagram'} />
                 </ContactIcon>
               </a>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ButtonComponent = styled.button`
   display: flex;
@@ -29,6 +29,7 @@ export const ButtonComponent = styled.button`
     color: ${({ theme }) => theme.colors.darkGreen};
   }
 
+  &:focus,
   &:hover {
     background-color: ${({ theme }) => theme.colors.darkGreen};
     border-color: ${({ theme }) => theme.colors.darkGreen};

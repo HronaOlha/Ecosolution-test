@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Btn = styled.a`
   gap: 12px;
@@ -12,6 +12,7 @@ export const Btn = styled.a`
   color: ${({ theme }) => theme.colors.darkGreen};
   transition: background-color 400ms ease, color 400ms ease;
 
+  &:focus,
   &:hover {
     background-color: ${({ theme }) => theme.colors.darkGreen};
     color: ${({ theme }) => theme.colors.mainGreen};

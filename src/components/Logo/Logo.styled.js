@@ -1,11 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   grid-area: logo;
 
   display: flex;
   align-items: center;
   gap: 4px;
+
+  &:focus,
+  &:hover {
+    fill: ${({ theme }) => theme.colors.mainGreen};
+  }
 `;
 export const Svg = styled.svg`
   stroke: transparent;

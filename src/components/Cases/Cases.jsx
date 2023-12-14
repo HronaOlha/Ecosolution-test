@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import { useState } from "react";
+import { useState } from 'react';
 import {
   CasesSection,
   CasesTitle,
@@ -12,20 +12,20 @@ import {
   CasesThumb,
   MainInfoBox,
   InfoBox,
-} from "./Cases.styled";
-import { slides } from "../../constants/constants";
-import { GoArrowUpRight } from "react-icons/go";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+} from './Cases.styled';
+import { slides } from '../../constants/constants';
+import { GoArrowUpRight } from 'react-icons/go';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 const Cases = ({ deviceType }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const addZero = (n) => {
-    return String(n).padStart(2, "0");
+  const addZero = n => {
+    return String(n).padStart(2, '0');
   };
 
-  const toggleSlide = (n) => {
-    setCurrentSlide((prev) => {
+  const toggleSlide = n => {
+    setCurrentSlide(prev => {
       let newSlide = prev + n;
 
       if (newSlide < 0) {
@@ -38,7 +38,7 @@ const Cases = ({ deviceType }) => {
     });
   };
 
-  const slidesPerView = deviceType === "mobile" ? 1 : 2;
+  const slidesPerView = deviceType === 'mobile' ? 1 : 2;
 
   const slideNum = () => {
     let slideNum = currentSlide + slidesPerView;
@@ -56,7 +56,7 @@ const Cases = ({ deviceType }) => {
   );
 
   return (
-    <CasesSection id="cases">
+    <CasesSection id="cases" aria-label="Successful cases section">
       <CasesTitle>Successful cases of our company</CasesTitle>
       <SlideBar>
         <p>
@@ -65,23 +65,36 @@ const Cases = ({ deviceType }) => {
         </p>
 
         <ButtonContainer>
-          <ToggleButton onClick={() => toggleSlide(-1)}>
+          <ToggleButton
+            aria-label="Previous Button"
+            type="button"
+            onClick={() => toggleSlide(-1)}
+          >
             <BsArrowLeft size="100%" />
           </ToggleButton>
-          <ToggleButton onClick={() => toggleSlide(1)}>
+          <ToggleButton
+            aria-label="Next button"
+            type="button"
+            onClick={() => toggleSlide(1)}
+          >
             <BsArrowRight size="100%" />
           </ToggleButton>
         </ButtonContainer>
       </SlideBar>
 
       <CasesList>
-        {currentSlides.map((item) => (
+        {currentSlides.map(item => (
           <CasesItem key={item.id}>
             <img src={item.image} alt={item.title} />
             <CasesThumb>
               <MainInfoBox>
                 <h4>{item.title}</h4>
-                <a href="/">
+                <a
+                  href="/"
+                  aria-label="Learn more"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <GoArrowUpRight size="100%" />
                 </a>
               </MainInfoBox>

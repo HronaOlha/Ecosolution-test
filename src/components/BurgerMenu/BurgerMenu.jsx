@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import sprite from "../../images/sprite.svg";
+import PropTypes from 'prop-types';
+import sprite from '../../images/sprite.svg';
 
 import {
   Overlay,
@@ -10,15 +10,15 @@ import {
   ItemText,
   SocialsContainer,
   Socials,
-} from "./BurgerMenu.styled";
-import { links } from "../../constants/constants";
-import { IoCloseOutline } from "react-icons/io5";
-import { GoArrowUpRight } from "react-icons/go";
+} from './BurgerMenu.styled';
+import { links } from '../../constants/constants';
+import { IoCloseOutline } from 'react-icons/io5';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const BurgerMenu = ({ handleMenuToggle }) => {
   return (
     <Overlay>
-      <BurgerContainer>
+      <BurgerContainer aria-label="Hamburger menu">
         <div>
           <CloseContainer onClick={handleMenuToggle}>
             <IoCloseOutline />
@@ -26,7 +26,7 @@ const BurgerMenu = ({ handleMenuToggle }) => {
           </CloseContainer>
 
           <PointsList>
-            {links.map((item) => (
+            {links.map(item => (
               <MenuItem key={item.id} onClick={handleMenuToggle}>
                 <ItemText href={item.link}>{item.value}</ItemText>
                 <GoArrowUpRight />
@@ -35,14 +35,14 @@ const BurgerMenu = ({ handleMenuToggle }) => {
           </PointsList>
         </div>
         <SocialsContainer>
-          <a href="/">
+          <a href="/" target="_blank" rel="noopener noreferrer">
             <Socials className="facebook">
-              <use href={sprite + "#facebook"} color="red" />
+              <use href={sprite + '#facebook'} color="red" />
             </Socials>
           </a>
-          <a href="/">
+          <a href="/" target="_blank" rel="noopener noreferrer">
             <Socials>
-              <use href={sprite + "#instagram"} />
+              <use href={sprite + '#instagram'} />
             </Socials>
           </a>
         </SocialsContainer>

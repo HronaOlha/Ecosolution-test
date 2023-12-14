@@ -1,15 +1,15 @@
-import styled from "styled-components";
-import { Line } from "../HorizontalLine/HorizontalLine.styled";
+import styled from 'styled-components';
+import { Line } from '../HorizontalLine/HorizontalLine.styled';
 
-export const FooterSection = styled.section`
+export const FooterSection = styled.footer`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-row-gap: 24px;
   grid-template-areas:
-    "line line line line line line line"
-    "logo logo logo logo logo logo buttonUp"
-    ". . . socials . . . "
-    "contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo";
+    'line line line line line line line'
+    'logo logo logo logo logo logo buttonUp'
+    '. . . socials . . . '
+    'contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo';
 
   padding-bottom: 24px;
 
@@ -17,9 +17,9 @@ export const FooterSection = styled.section`
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 16px;
     grid-template-areas:
-      "line line line line"
-      "logo logo socials buttonUp"
-      "contactsInfo contactsInfo contactsInfo contactsInfo";
+      'line line line line'
+      'logo logo socials buttonUp'
+      'contactsInfo contactsInfo contactsInfo contactsInfo';
 
     padding-top: 50px;
     padding-bottom: 40px;
@@ -27,9 +27,9 @@ export const FooterSection = styled.section`
   @media screen and (${({ theme }) => theme.media.desktop}) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-      "line line line line line"
-      "logo logo . socials buttonUp"
-      "contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo";
+      'line line line line line'
+      'logo logo . socials buttonUp'
+      'contactsInfo contactsInfo contactsInfo contactsInfo contactsInfo';
 
     padding-top: 60px;
   }
@@ -49,6 +49,7 @@ export const ButtonUp = styled.a`
   color: ${({ theme }) => theme.colors.darkGreen};
   transition: background-color 400ms ease, color 400ms ease;
 
+  &:focus,
   &:hover {
     background-color: ${({ theme }) => theme.colors.darkGreen};
     color: ${({ theme }) => theme.colors.mainGreen};
@@ -74,6 +75,7 @@ export const Socials = styled.svg`
   fill: transparent;
   transition: stroke 400ms ease;
 
+  &:focus,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }

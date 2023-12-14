@@ -23,7 +23,7 @@ const Faq = () => {
   };
 
   return (
-    <FaqSection id="faq">
+    <FaqSection id="faq" aria-label="FAQ section">
       <FaqTitle>Frequently Asked Questions</FaqTitle>
       <FaqAccordion>
         {questions.map((item, i) => (

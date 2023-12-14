@@ -1,5 +1,5 @@
-import ContactInfo from "../ContactInfo/ContactInfo";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import ContactInfo from '../ContactInfo/ContactInfo';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 import {
   MainSection,
@@ -8,11 +8,11 @@ import {
   MainImage,
   ContactInfoContainer,
   ButtonComponent,
-} from "./Main.styled";
+} from './Main.styled';
 
 const Main = () => {
   return (
-    <MainSection id="main">
+    <MainSection id="main" aria-label="main section">
       <h1>Renewable energy for any task</h1>
       <Text>
         Development and implementation of renewable non-polluting energy

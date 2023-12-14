@@ -1,22 +1,22 @@
-import PropTypes from "prop-types";
-import sprite from "../../images/sprite.svg";
-import { values } from "../../constants/constants";
+import PropTypes from 'prop-types';
+import sprite from '../../images/sprite.svg';
+import { values } from '../../constants/constants';
 
 import {
   ValuesTexts,
   ValuesGrid,
   WindFarmImg,
   WorkerTab,
-} from "./Values.styled";
+} from './Values.styled';
 
-import windFarmTab from "../../images/wind-farms-tab.png";
-import windFarmDesk from "../../images/wind-farms-desk.png";
-import workerTab from "../../images/worker-by-solar-panels-tab.png";
-import workerDesk from "../../images/worker-by-solar-panels-desk.png";
+import windFarmTab from '../../images/wind-farms-tab.png';
+import windFarmDesk from '../../images/wind-farms-desk.png';
+import workerTab from '../../images/worker-by-solar-panels-tab.png';
+import workerDesk from '../../images/worker-by-solar-panels-desk.png';
 
 const Values = ({ deviceType }) => {
   return (
-    <section id="values">
+    <section id="values" aria-label="values section">
       <ValuesTexts>
         <h2>Main values of our company</h2>
         <p>
@@ -28,7 +28,7 @@ const Values = ({ deviceType }) => {
         </p>
       </ValuesTexts>
       <ValuesGrid>
-        {values.map((item) => (
+        {values.map(item => (
           <div key={item.id}>
             <h3>
               <svg>
@@ -39,13 +39,13 @@ const Values = ({ deviceType }) => {
             <p>{item.text}</p>
           </div>
         ))}
-        {deviceType === "tablet" && (
+        {deviceType === 'tablet' && (
           <>
             <WindFarmImg src={windFarmTab} alt="wind farms field" />
             <WorkerTab src={workerTab} alt="worker by solar panels" />
           </>
         )}
-        {deviceType === "desktop" && (
+        {deviceType === 'desktop' && (
           <>
             <WindFarmImg src={windFarmDesk} alt="wind farms field" />
             <WorkerTab src={workerDesk} alt="worker by solar panels" />

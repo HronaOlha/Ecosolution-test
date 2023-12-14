@@ -36,12 +36,14 @@ function App() {
   return (
     <>
       <Header deviceType={deviceType} />
-      <Main />
-      <Values deviceType={deviceType} />
-      <Electricity />
-      <Cases deviceType={deviceType} />
-      <Faq />
-      <Contact />
+      <main>
+        <Main />
+        <Values deviceType={deviceType} />
+        <Electricity />
+        <Cases deviceType={deviceType} />
+        <Faq />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

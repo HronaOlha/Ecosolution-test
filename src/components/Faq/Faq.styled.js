@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FaqSection = styled.section`
   @media screen and (${({ theme }) => theme.media.tablet}) {
@@ -74,6 +74,8 @@ export const FaqAccordion = styled.ul`
   @media screen and (${({ theme }) => theme.media.tablet}) {
     grid-column: 1/2;
     grid-row: 1/3;
+
+    margin-bottom: 0;
   }
   @media screen and (${({ theme }) => theme.media.desktop}) {
     grid-column: 1/5;

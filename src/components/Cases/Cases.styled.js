@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CasesSection = styled.section`
   @media screen and (${({ theme }) => theme.media.tablet}) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "title slideBar"
-      "list list";
+      'title slideBar'
+      'list list';
   }
   @media screen and (${({ theme }) => theme.media.desktop}) {
     grid-row-gap: 100px;
@@ -78,6 +78,7 @@ export const ToggleButton = styled.button`
   color: ${({ theme }) => theme.colors.darkGreen};
   transition: border-color 400ms ease, color 400ms ease;
 
+  &:focus,
   &:hover {
     border-color: ${({ theme }) => theme.colors.mainGreen};
     color: ${({ theme }) => theme.colors.mainGreen};
@@ -167,6 +168,7 @@ export const MainInfoBox = styled.div`
     color: ${({ theme }) => theme.colors.darkGreen};
     transition: background-color 400ms ease, color 400ms ease;
 
+    &:focus,
     &:hover {
       background-color: ${({ theme }) => theme.colors.darkGreen};
       color: ${({ theme }) => theme.colors.mainGreen};

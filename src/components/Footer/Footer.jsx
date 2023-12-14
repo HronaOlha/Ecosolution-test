@@ -1,9 +1,9 @@
-import { IoIosArrowRoundUp } from "react-icons/io";
+import { IoIosArrowRoundUp } from 'react-icons/io';
 
-import sprite from "../../images/sprite.svg";
+import sprite from '../../images/sprite.svg';
 
-import ContactInfo from "../ContactInfo/ContactInfo";
-import Logo from "../Logo/Logo";
+import ContactInfo from '../ContactInfo/ContactInfo';
+import Logo from '../Logo/Logo';
 
 import {
   FooterSection,
@@ -11,7 +11,7 @@ import {
   SocialsContainer,
   Socials,
   FooterLine,
-} from "./Footer.styled";
+} from './Footer.styled';
 
 const Footer = () => {
   return (
@@ -19,24 +19,24 @@ const Footer = () => {
       <FooterLine />
       <Logo />
 
-      <ButtonUp href="#main">
+      <ButtonUp href="#main" aria-label="Button to main section">
         <IoIosArrowRoundUp size="100%" />
       </ButtonUp>
 
       <SocialsContainer>
-        <a href="/">
-          <Socials className="facebook">
-            <use href={sprite + "#facebook"} />
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <Socials className="facebook" aria-label="facebook">
+            <use href={sprite + '#facebook'} />
           </Socials>
         </a>
-        <a href="/">
-          <Socials>
-            <use href={sprite + "#instagram"} />
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <Socials aria-label="instagram">
+            <use href={sprite + '#instagram'} />
           </Socials>
         </a>
       </SocialsContainer>
 
-      <ContactInfo gap={"16px"} />
+      <ContactInfo gap={'16px'} />
     </FooterSection>
   );
 };

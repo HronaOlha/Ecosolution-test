@@ -69,6 +69,7 @@ export const ContactItem = styled.li`
     text-align: left;
     letter-spacing: -0.8px;
 
+    &:focus > svg,
     &:hover > svg {
       stroke: ${({ theme }) => theme.colors.mainGreen};
     }
@@ -88,6 +89,7 @@ export const ContactIcon = styled.svg`
   fill: transparent;
   transition: stroke 400ms ease;
 
+  &:focus,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }

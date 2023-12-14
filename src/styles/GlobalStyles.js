@@ -99,8 +99,11 @@ h3{
   }
 
   a {
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
     color: inherit;
-    text-decoration: none;   
   } 
 
   img,
@@ -119,11 +122,16 @@ h3{
   button,
   textarea,
   select{
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
     font: inherit;
     color: inherit
 }
 
-section {
+header,
+section,
+footer {
   margin: 0 auto;
   padding: 18px 20px;
    max-width: 480px;

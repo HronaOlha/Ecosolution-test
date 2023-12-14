@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactInfoContainer = styled.div`
   grid-area: contactsInfo;
 
   display: flex;
   flex-direction: column;
-  gap: ${(props) => props.gap || "8px"};
+  gap: ${props => props.gap || '8px'};
   align-items: center;
 
   letter-spacing: -0.64px;
@@ -13,12 +13,12 @@ export const ContactInfoContainer = styled.div`
   @media screen and (${({ theme }) => theme.media.tablet}) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "address address mail ecosolution";
+    grid-template-areas: 'address address mail ecosolution';
   }
   @media screen and (${({ theme }) => theme.media.desktop}) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "address address .  mail ecosolution";
+    grid-template-areas: 'address address .  mail ecosolution';
   }
 
   & > .address {

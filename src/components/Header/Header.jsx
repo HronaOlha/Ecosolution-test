@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
 
-import { IoIosMenu } from "react-icons/io";
+import { IoIosMenu } from 'react-icons/io';
 
-import Logo from "../Logo/Logo";
-import { HeaderSection, Nav, BurgerBtn } from "./Header.styled";
-import ContactBtn from "../ContactBtn/ContactBtn";
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import Logo from '../Logo/Logo';
+import { HeaderSection, Nav, BurgerBtn } from './Header.styled';
+import ContactBtn from '../ContactBtn/ContactBtn';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = ({ deviceType }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,27 +20,31 @@ const Header = ({ deviceType }) => {
       setIsScrolled(scrollPosition > threshold);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const handleMenuToggle = () => {
-    setIsMenuOpen((prev) => !prev);
+    setIsMenuOpen(prev => !prev);
   };
 
   return (
     <>
-      <HeaderSection className={isScrolled ? "scrolled" : ""}>
+      <HeaderSection className={isScrolled ? 'scrolled' : ''}>
         <Logo />
         <Nav>
-          <BurgerBtn onClick={handleMenuToggle}>
+          <BurgerBtn
+            aria-label="Hamburger Menu button"
+            type="button"
+            onClick={handleMenuToggle}
+          >
             <IoIosMenu size="100%" />
           </BurgerBtn>
-          {deviceType === "tablet" && <ContactBtn text="Get in touch" />}
-          {deviceType === "desktop" && <ContactBtn text="Get in touch" />}
+          {deviceType === 'tablet' && <ContactBtn text="Get in touch" />}
+          {deviceType === 'desktop' && <ContactBtn text="Get in touch" />}
         </Nav>
       </HeaderSection>
       {isMenuOpen && <BurgerMenu handleMenuToggle={handleMenuToggle} />}
