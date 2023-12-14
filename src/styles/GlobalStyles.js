@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -20,6 +20,8 @@ export const GlobalStyles = createGlobalStyle`
 
     font-family: ${({ theme }) => theme.fonts.body};
     color: ${({ theme }) => theme.colors.darkGreen};
+
+    background-color: #242424;
 
     text-align: justify;
   }
