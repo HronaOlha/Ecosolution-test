@@ -1,12 +1,13 @@
-import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import { IoIosMenu } from 'react-icons/io';
 
 import Logo from '../Logo/Logo';
-import { HeaderSection, Nav, BurgerBtn } from './Header.styled';
 import ContactBtn from '../ContactBtn/ContactBtn';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
+
+import { HeaderSection, Nav, BurgerBtn } from './Header.styled';
 
 const Header = ({ deviceType }) => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -1,4 +1,8 @@
 import { useState } from 'react';
+
+import { questions } from '../../constants/constants';
+import ContactBtn from '../ContactBtn/ContactBtn';
+
 import {
   FaqSection,
   FaqTitle,
@@ -8,8 +12,6 @@ import {
   FaqContacts,
   FaqText,
 } from './Faq.styled';
-import { questions } from '../../constants/constants';
-import ContactBtn from '../ContactBtn/ContactBtn';
 
 const Faq = () => {
   const [selected, setSelected] = useState(0);

@@ -1,7 +1,8 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
-import { Btn } from "./ContactBtn.styled";
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
+
+import { Btn } from './ContactBtn.styled';
 
 const ContactBtn = ({ text }) => {
   return (

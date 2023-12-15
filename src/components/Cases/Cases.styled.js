@@ -106,7 +106,16 @@ export const CasesItem = styled.li`
   width: 100%;
 
   & > img {
+    height: 168px;
     width: 100%;
+    @media screen and (${({ theme }) => theme.media.tablet}) {
+      height: 168px;
+      width: 342px;
+    }
+    @media screen and (${({ theme }) => theme.media.desktop}) {
+      height: 296px;
+      width: 596px;
+    }
   }
 `;
 

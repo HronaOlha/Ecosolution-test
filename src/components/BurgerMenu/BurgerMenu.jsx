@@ -1,4 +1,8 @@
 import PropTypes from 'prop-types';
+import { IoCloseOutline } from 'react-icons/io5';
+import { GoArrowUpRight } from 'react-icons/go';
+
+import { links } from '../../constants/constants';
 import sprite from '../../images/sprite.svg';
 
 import {
@@ -11,9 +15,6 @@ import {
   SocialsContainer,
   Socials,
 } from './BurgerMenu.styled';
-import { links } from '../../constants/constants';
-import { IoCloseOutline } from 'react-icons/io5';
-import { GoArrowUpRight } from 'react-icons/go';
 
 const BurgerMenu = ({ handleMenuToggle }) => {
   return (
@@ -35,12 +36,12 @@ const BurgerMenu = ({ handleMenuToggle }) => {
           </PointsList>
         </div>
         <SocialsContainer>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
             <Socials className="facebook">
               <use href={sprite + '#facebook'} color="red" />
             </Socials>
           </a>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
             <Socials>
               <use href={sprite + '#instagram'} />
             </Socials>

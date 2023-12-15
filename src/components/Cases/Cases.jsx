@@ -1,6 +1,11 @@
-import PropTypes from 'prop-types';
-
 import { useState } from 'react';
+
+import PropTypes from 'prop-types';
+import { GoArrowUpRight } from 'react-icons/go';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+
+import { slides } from '../../constants/constants';
+
 import {
   CasesSection,
   CasesTitle,
@@ -13,9 +18,6 @@ import {
   MainInfoBox,
   InfoBox,
 } from './Cases.styled';
-import { slides } from '../../constants/constants';
-import { GoArrowUpRight } from 'react-icons/go';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 const Cases = ({ deviceType }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -85,7 +87,7 @@ const Cases = ({ deviceType }) => {
       <CasesList>
         {currentSlides.map(item => (
           <CasesItem key={item.id}>
-            <img src={item.image} alt={item.title} />
+            <img src={item.image} alt={item.title} loading="lazy" />
             <CasesThumb>
               <MainInfoBox>
                 <h4>{item.title}</h4>
@@ -93,7 +95,7 @@ const Cases = ({ deviceType }) => {
                   href="/"
                   aria-label="Learn more"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                 >
                   <GoArrowUpRight size="100%" />
                 </a>

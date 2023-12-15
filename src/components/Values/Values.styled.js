@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ValuesTexts = styled.div`
   & > p {
@@ -94,21 +94,31 @@ export const ValuesGrid = styled.div`
   @media screen and (${({ theme }) => theme.media.tablet}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "one two windFarmImg windFarmImg"
-      "workerTab workerTab three four";
+      'one two windFarmImg windFarmImg'
+      'workerTab workerTab three four';
   }
 
   @media screen and (${({ theme }) => theme.media.desktop}) {
     grid-gap: 48px;
   }
+
+  & img {
+    @media screen and (${({ theme }) => theme.media.tablet}) {
+      height: 197px;
+      width: 342px;
+    }
+
+    @media screen and (${({ theme }) => theme.media.desktop}) {
+      height: 339px;
+      width: 596px;
+    }
+  }
 `;
 
 export const WindFarmImg = styled.img`
   grid-area: windFarmImg;
-  width: 100%;
 `;
 
 export const WorkerTab = styled.img`
   grid-area: workerTab;
-  width: 100%;
 `;

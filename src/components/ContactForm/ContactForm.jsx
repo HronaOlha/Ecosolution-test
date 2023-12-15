@@ -1,24 +1,25 @@
-import * as yup from "yup";
-import { useFormik } from "formik";
+import * as yup from 'yup';
+import { useFormik } from 'formik';
 
-import Button from "../Button/Button";
-import { Form, Label, ErrorText } from "./ContactForm.styled";
+import Button from '../Button/Button';
+
+import { Form, Label, ErrorText } from './ContactForm.styled';
 
 const schema = yup.object().shape({
   name: yup
     .string()
     .matches(/^[a-zA-Zа-яА-Я\s]+$/)
-    .required("Required"),
-  email: yup.string().email().required("Required"),
+    .required('Required'),
+  email: yup.string().email().required('Required'),
   phone: yup
     .string()
     .matches(/^\d{12}$/)
-    .required("Required"),
+    .required('Required'),
   message: yup.string(),
 });
 
 const onSubmit = async (values, actions) => {
-  await new Promise((resolve) => setTimeout(resolve, 0));
+  await new Promise(resolve => setTimeout(resolve, 0));
   actions.resetForm();
   alert(JSON.stringify(values, null, 2));
 };
@@ -27,10 +28,10 @@ const ContactForm = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: {
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
       },
 
       validationSchema: schema,
@@ -50,9 +51,9 @@ const ContactForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder="John Rosie"
-          className={errors.name && touched.name ? "error" : ""}
+          className={errors.name && touched.name ? 'error' : ''}
         />
-        <ErrorText className={errors.name && touched.name ? "error" : ""}>
+        <ErrorText className={errors.name && touched.name ? 'error' : ''}>
           Wrong Fullname
         </ErrorText>
       </Label>
@@ -68,9 +69,9 @@ const ContactForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder="johnrosie@gmail.com"
-          className={errors.email && touched.email ? "error" : ""}
+          className={errors.email && touched.email ? 'error' : ''}
         />
-        <ErrorText className={errors.email && touched.email ? "error" : ""}>
+        <ErrorText className={errors.email && touched.email ? 'error' : ''}>
           Wrong Email
         </ErrorText>
       </Label>
@@ -86,9 +87,9 @@ const ContactForm = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder="380961234567"
-          className={errors.phone && touched.phone ? "error" : ""}
+          className={errors.phone && touched.phone ? 'error' : ''}
         />
-        <ErrorText className={errors.phone && touched.phone ? "error" : ""}>
+        <ErrorText className={errors.phone && touched.phone ? 'error' : ''}>
           Wrong Phone
         </ErrorText>
       </Label>

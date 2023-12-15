@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
+
 import sprite from '../../images/sprite.svg';
 import { values } from '../../constants/constants';
+import windFarmTab from '../../images/wind-farms-tab.png';
+import windFarmDesk from '../../images/wind-farms-desk.png';
+import workerTab from '../../images/worker-by-solar-panels-tab.png';
+import workerDesk from '../../images/worker-by-solar-panels-desk.png';
 
 import {
   ValuesTexts,
@@ -8,11 +13,6 @@ import {
   WindFarmImg,
   WorkerTab,
 } from './Values.styled';
-
-import windFarmTab from '../../images/wind-farms-tab.png';
-import windFarmDesk from '../../images/wind-farms-desk.png';
-import workerTab from '../../images/worker-by-solar-panels-tab.png';
-import workerDesk from '../../images/worker-by-solar-panels-desk.png';
 
 const Values = ({ deviceType }) => {
   return (
@@ -41,14 +41,30 @@ const Values = ({ deviceType }) => {
         ))}
         {deviceType === 'tablet' && (
           <>
-            <WindFarmImg src={windFarmTab} alt="wind farms field" />
-            <WorkerTab src={workerTab} alt="worker by solar panels" />
+            <WindFarmImg
+              src={windFarmTab}
+              alt="wind farms field"
+              loading="lazy"
+            />
+            <WorkerTab
+              src={workerTab}
+              alt="worker by solar panels"
+              loading="lazy"
+            />
           </>
         )}
         {deviceType === 'desktop' && (
           <>
-            <WindFarmImg src={windFarmDesk} alt="wind farms field" />
-            <WorkerTab src={workerDesk} alt="worker by solar panels" />
+            <WindFarmImg
+              src={windFarmDesk}
+              alt="wind farms field"
+              loading="lazy"
+            />
+            <WorkerTab
+              src={workerDesk}
+              alt="worker by solar panels"
+              loading="lazy"
+            />
           </>
         )}
       </ValuesGrid>

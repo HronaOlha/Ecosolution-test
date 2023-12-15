@@ -24,12 +24,12 @@ const Footer = () => {
       </ButtonUp>
 
       <SocialsContainer>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="/" target="_blank" rel="noopener noreferrer nofollow">
           <Socials className="facebook" aria-label="facebook">
             <use href={sprite + '#facebook'} />
           </Socials>
         </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="/" target="_blank" rel="noopener noreferrer nofollow">
           <Socials aria-label="instagram">
             <use href={sprite + '#instagram'} />
           </Socials>
