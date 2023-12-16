@@ -4,6 +4,7 @@ export const HeaderSection = styled.header`
   position: fixed;
   right: 0;
   left: 0;
+  z-index: 2;
 
   display: flex;
   justify-content: space-between;
@@ -11,11 +12,22 @@ export const HeaderSection = styled.header`
   padding-top: 36px;
   padding-bottom: 36px;
 
-  transition: backdrop-filter 300ms ease;
+  transition: background-color 300ms ease, padding 300ms ease;
 
   &.scrolled {
-    background-size: 100% 15px;
-    backdrop-filter: blur(10px);
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    background-color: ${({ theme }) => theme.colors.white};
+
+    @media screen and (${({ theme }) => theme.media.tablet}) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media screen and (${({ theme }) => theme.media.desktop}) {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
   }
 `;
 

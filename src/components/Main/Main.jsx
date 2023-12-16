@@ -23,7 +23,7 @@ import {
 const Main = () => {
   return (
     <MainSection id="main" aria-label="main section">
-      <h2>Renewable energy for any task</h2>
+      <h1>Renewable energy for any task</h1>
       <Text>
         Development and implementation of renewable non-polluting energy
         sources, generating power generation using energy wind, sun, water,
@@ -40,12 +40,12 @@ const Main = () => {
       <ContactInfoContainer>
         <ContactInfo />
       </ContactInfoContainer>
-      <Image
+      {/* <Image
         // srcset={`${windTurbineTab1x} 708w, ${windTurbineMob1x} 320w`}
         // sizes="(min-width: 768px) 708px,(min-width: 360px) 320px, 100vw"
         src={windTurbineMob1x}
         alt=""
-      />
+      /> */}
       {/* <MainImage /> */}
     </MainSection>
   );

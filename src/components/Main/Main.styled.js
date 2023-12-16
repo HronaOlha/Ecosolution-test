@@ -10,13 +10,21 @@ export const MainSection = styled.section`
 
   @media screen and (${({ theme }) => theme.media.tablet}) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* grid-template-areas:
       'heading heading text text'
       'heading heading button button'
       'line line line line'
       'mainContacts mainContacts mainContacts mainContacts'
-      'mainImage mainImage mainImage mainImage';
+      'mainImage mainImage mainImage mainImage'; */
+    grid-template-areas:
+      'heading text'
+      'heading button'
+      'line line'
+      'mainContacts mainContacts'
+      'mainImage mainImage';
 
     padding-top: 240px;
     text-align: left;

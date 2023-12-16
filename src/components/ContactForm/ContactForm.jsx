@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { useFormik } from 'formik';
+import toast, { Toaster } from 'react-hot-toast';
 
 import Button from '../Button/Button';
 
@@ -20,9 +21,14 @@ const schema = yup.object().shape({
 
 const onSubmit = async (values, actions) => {
   await new Promise(resolve => setTimeout(resolve, 0));
+  localStorage.setItem('contacts', JSON.stringify(values));
   actions.resetForm();
-  alert(JSON.stringify(values, null, 2));
+  toast.success(
+    `Thank you! We've received your contact information. We'll be in touch shortly.`
+  );
 };
+
+// JSON.stringify(values, null, 2);
 
 const ContactForm = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
@@ -107,6 +113,11 @@ const ContactForm = () => {
         ></textarea>
       </Label>
       <Button type="submit" text="Send" />
+      <Toaster
+        toastOptions={{
+          duration: 2500,
+        }}
+      />
     </Form>
   );
 };

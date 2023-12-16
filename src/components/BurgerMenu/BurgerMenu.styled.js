@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -22,10 +22,12 @@ export const Overlay = styled.div`
 `;
 
 export const BurgerContainer = styled.div`
+  height: 100%;
   position: absolute;
   top: 36px;
   right: 20px;
-  bottom: 36px;
+  height: 90svh;
+  /* bottom: 100px; */
   z-index: 1000;
 
   display: flex;
@@ -102,6 +104,7 @@ export const MenuItem = styled.li`
   gap: 8px;
   align-items: center;
   cursor: pointer;
+  width: fit-content;
   transition: color 400ms ease;
 
   &:hover {

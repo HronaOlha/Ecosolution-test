@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
 import { GoArrowUpRight } from 'react-icons/go';
@@ -16,10 +17,10 @@ import {
   Socials,
 } from './BurgerMenu.styled';
 
-const BurgerMenu = ({ handleMenuToggle }) => {
+const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
   return (
     <Overlay>
-      <BurgerContainer aria-label="Hamburger menu">
+      <BurgerContainer aria-label="Hamburger menu" ref={ref}>
         <div>
           <CloseContainer onClick={handleMenuToggle}>
             <IoCloseOutline />
@@ -50,7 +51,7 @@ const BurgerMenu = ({ handleMenuToggle }) => {
       </BurgerContainer>
     </Overlay>
   );
-};
+});
 
 export default BurgerMenu;
 

@@ -13,6 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body { 
+    /* overflow: hidden; */
+
     margin: 0 ;
     padding: 0;  
     width: 100vw;
@@ -20,8 +22,6 @@ export const GlobalStyles = createGlobalStyle`
 
     font-family: ${({ theme }) => theme.fonts.body};
     color: ${({ theme }) => theme.colors.darkGreen};
-
-    background-color: #242424;
 
     text-align: justify;
   }
@@ -133,15 +133,17 @@ header,
 section,
 footer {
   margin: 0 auto;
-  padding: 18px 20px;
+  /* padding: 18px 20px; */
+  padding: 42px 20px 0;
+
    max-width: 480px;
 
    @media screen and (${({ theme }) => theme.media.tablet}) {
-  padding: 50px 30px;
+  padding: 100px 30px 0;
   max-width: 768px;
   }
     @media screen and (${({ theme }) => theme.media.desktop}) {
-  padding: 60px 20px;
+  padding: 120px 20px 0;
   max-width: 1280px;
   }
 }
