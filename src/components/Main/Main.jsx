@@ -2,7 +2,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 import ContactInfo from '../ContactInfo/ContactInfo';
 
-import windTurbineMob1x from '../../images/wind-turbine-mob-1x.jpg';
+// import windTurbineMob1x from '../../images/wind-turbine-mob-1x.jpg';
 // import windTurbineTab1x from '../../images/wind-turbine-tab-1x.jpg';
 // import windTurbineDesk1x from '../../images/wind-turbine-desk-1x.jpg';
 
@@ -15,7 +15,7 @@ import {
   Text,
   MainLine,
   // MainImage,
-  Image,
+  // Image,
   ContactInfoContainer,
   ButtonComponent,
 } from './Main.styled';
