@@ -2,8 +2,8 @@ import { IoIosArrowRoundUp } from 'react-icons/io';
 
 import sprite from '../../images/sprite.svg';
 
-import ContactInfo from '../ContactInfo/ContactInfo';
-import Logo from '../Logo/Logo';
+import ContactInfo from '../../components/ContactInfo/ContactInfo';
+import Logo from '../../components/Logo/Logo';
 
 import {
   FooterSection,

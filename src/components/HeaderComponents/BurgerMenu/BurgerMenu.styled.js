@@ -66,6 +66,8 @@ export const CloseContainer = styled.div`
   cursor: pointer;
   transition: color 400ms ease;
 
+  &:focus,
+  &:focus > svg,
   &:hover,
   &:hover > svg {
     color: ${({ theme }) => theme.colors.mainGreen};
@@ -107,6 +109,7 @@ export const MenuItem = styled.li`
   width: fit-content;
   transition: color 400ms ease;
 
+  &:focus-within,
   &:hover {
     color: ${({ theme }) => theme.colors.mainGreen};
   }
@@ -135,6 +138,7 @@ export const Socials = styled.svg`
   transition: stroke 400ms ease;
   stroke: ${({ theme }) => theme.colors.white};
 
+  ${SocialsContainer}:focus &,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Line } from '../HorizontalLine/HorizontalLine.styled';
+import { Line } from '../../components/HorizontalLine/HorizontalLine.styled';
 
 export const FooterSection = styled.footer`
   display: grid;

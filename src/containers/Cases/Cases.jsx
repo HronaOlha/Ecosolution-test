@@ -1,22 +1,17 @@
 import { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { GoArrowUpRight } from 'react-icons/go';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 import { slides } from '../../constants/constants';
 
+import CasesSlides from './CasesSlides/CasesSlides';
 import {
   CasesSection,
   CasesTitle,
   SlideBar,
   ButtonContainer,
   ToggleButton,
-  CasesList,
-  CasesItem,
-  CasesThumb,
-  MainInfoBox,
-  InfoBox,
 } from './Cases.styled';
 
 const Cases = ({ deviceType }) => {
@@ -75,32 +70,7 @@ const Cases = ({ deviceType }) => {
           </ToggleButton>
         </ButtonContainer>
       </SlideBar>
-
-      <CasesList>
-        {currentSlides.map(item => (
-          <CasesItem key={item.id}>
-            <img src={item.image} alt={item.title} loading="lazy" />
-            <CasesThumb>
-              <MainInfoBox>
-                <h4>{item.title}</h4>
-                <a
-                  href="/"
-                  aria-label="Learn more"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <GoArrowUpRight size="100%" />
-                </a>
-              </MainInfoBox>
-
-              <InfoBox>
-                <p>{item.text}</p>
-                <p>{item.date}</p>
-              </InfoBox>
-            </CasesThumb>
-          </CasesItem>
-        ))}
-      </CasesList>
+      <CasesSlides currentSlides={currentSlides} />
     </CasesSection>
   );
 };

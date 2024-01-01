@@ -69,8 +69,8 @@ export const ContactItem = styled.li`
     text-align: left;
     letter-spacing: -0.8px;
 
-    &:focus > svg,
-    &:hover > svg {
+    &:focus svg,
+    &:hover svg {
       stroke: ${({ theme }) => theme.colors.mainGreen};
     }
 
@@ -89,7 +89,7 @@ export const ContactIcon = styled.svg`
   fill: transparent;
   transition: stroke 400ms ease;
 
-  &:focus,
+  &:focus-visible,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }
@@ -111,5 +111,11 @@ export const Socials = styled.div`
     gap: 8px;
     padding-top: 0;
     padding-left: 0;
+  }
+
+  &:focus-within {
+    .focus-visible {
+      stroke: ${({ theme }) => theme.colors.mainGreen};
+    }
   }
 `;

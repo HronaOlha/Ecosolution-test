@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import { IoIosMenu } from 'react-icons/io';
 
-import Logo from '../Logo/Logo';
-import ContactBtn from '../ContactBtn/ContactBtn';
+import Logo from '../../Logo/Logo';
+import ContactBtn from '../../ContactBtn/ContactBtn';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 import { HeaderSection, Nav, BurgerBtn } from './Header.styled';
@@ -74,9 +74,11 @@ const Header = ({ deviceType }) => {
           >
             <IoIosMenu size="100%" />
           </BurgerBtn>
-          {(deviceType === 'tablet' || deviceType === 'desktop') && (
+          {deviceType === 'tablet' && <ContactBtn text="Get in touch" />}
+          {deviceType === 'desktop' && <ContactBtn text="Get in touch" />}
+          {/* {(deviceType === 'tablet' || deviceType === 'desktop') && (
             <ContactBtn text="Get in touch" />
-          )}
+          )} */}
         </Nav>
       </HeaderSection>
       {isMenuOpen && (

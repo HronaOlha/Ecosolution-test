@@ -17,7 +17,7 @@ export const Svg = styled.svg`
   fill: ${({ theme }) => theme.colors.darkGreen};
   transition: fill 400ms ease;
 
-  &:focus,
+  ${LogoContainer}:focus &,
   &:hover {
     fill: ${({ theme }) => theme.colors.mainGreen};
   }

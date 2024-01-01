@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
 import { GoArrowUpRight } from 'react-icons/go';
 
-import { links } from '../../constants/constants';
-import sprite from '../../images/sprite.svg';
+import { links } from '../../../constants/constants';
+import sprite from '../../../images/sprite.svg';
 
 import {
   Overlay,

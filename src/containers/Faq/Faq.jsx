@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { questions } from '../../constants/constants';
-import ContactBtn from '../ContactBtn/ContactBtn';
+import ContactBtn from '../../components/ContactBtn/ContactBtn';
 
 import {
   FaqSection,

@@ -1,5 +1,5 @@
 import sprite from '../../images/sprite.svg';
-import ContactForm from '../ContactForm/ContactForm';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 import {
   ContactSection,
@@ -8,6 +8,7 @@ import {
   ContactItem,
   ContactIcon,
   Socials,
+  // SocialsLink,
 } from './Contact.styled';
 
 const Contact = () => {
@@ -57,12 +58,12 @@ const Contact = () => {
             <h3>Social Networks:</h3>
             <Socials>
               <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-                <ContactIcon aria-label="facebook">
+                <ContactIcon aria-label="facebook" className="focus-visible">
                   <use href={sprite + '#facebook'} />
                 </ContactIcon>
               </a>
               <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-                <ContactIcon aria-label="instagram">
+                <ContactIcon aria-label="instagram" className="focus-visible">
                   <use href={sprite + '#instagram'} />
                 </ContactIcon>
               </a>

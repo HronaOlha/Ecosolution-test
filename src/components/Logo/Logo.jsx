@@ -10,7 +10,7 @@ const Logo = () => {
         <use href={Emblem + '#emblem'} width="100%" height="100%" />
       </Svg>
       <div>
-        <Svg width="170px" height="30px">
+        <Svg width="170px" height="30px" focusable="true">
           <title>Ecosolution</title>
           <use href={Ecosolution + '#ecosolution'} width="100%" height="100%" />
         </Svg>

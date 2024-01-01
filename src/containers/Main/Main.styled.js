@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Line } from '../HorizontalLine/HorizontalLine.styled';
+import { Line } from '../../components/HorizontalLine/HorizontalLine.styled';
 
 // import windTurbineMob from '../../images/wind-turbine-mob.png';
 // import windTurbineTab from '../../images/wind-turbine-tab.png';
