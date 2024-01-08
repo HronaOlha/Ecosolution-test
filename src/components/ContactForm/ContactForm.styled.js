@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Form = styled.form`
   grid-area: contactForm;
@@ -28,7 +28,6 @@ export const Label = styled.label`
   gap: 8px;
 
   margin-bottom: 6px;
-
   @media screen and (${({ theme }) => theme.media.desktop}) {
     gap: 12px;
   }
@@ -40,6 +39,7 @@ export const Label = styled.label`
     margin-bottom: 28px;
     border: none;
     border-bottom: 1px solid ${({ theme }) => theme.colors.mainGreen};
+    width: 100%;
     padding-bottom: 8px;
 
     background-color: transparent;

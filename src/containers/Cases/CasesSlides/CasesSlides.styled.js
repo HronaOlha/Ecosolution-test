@@ -1,32 +1,45 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import styled from 'styled-components';
 
-export const CasesList = styled.ul`
+export const CasesList = styled(Swiper)`
   grid-area: list;
-
-  display: flex;
-  gap: 24px;
-
-  @media screen and (${({ theme }) => theme.media.desktop}) {
-    gap: 48px;
-  }
-`;
-
-export const CasesItem = styled.li`
   width: 100%;
+`;
 
+// export const CasesList = styled.ul`
+//   grid-area: list;
+
+//   display: flex;
+//   gap: 24px;
+
+//   @media screen and (${({ theme }) => theme.media.desktop}) {
+//     gap: 48px;
+//   }
+// `;
+
+export const CasesItem = styled(SwiperSlide)`
   & > img {
-    height: 168px;
     width: 100%;
-    @media screen and (${({ theme }) => theme.media.tablet}) {
-      height: 168px;
-      width: 342px;
-    }
-    @media screen and (${({ theme }) => theme.media.desktop}) {
-      height: 296px;
-      width: 596px;
-    }
   }
 `;
+
+// export const CasesItem = styled.li`
+//   width: 100%;
+
+//   & > img {
+//     height: 168px;
+//     width: 100%;
+//     @media screen and (${({ theme }) => theme.media.tablet}) {
+//       height: 168px;
+//       width: 342px;
+//     }
+//     @media screen and (${({ theme }) => theme.media.desktop}) {
+//       height: 296px;
+//       width: 596px;
+//     }
+//   }
+// `;
 
 export const CasesThumb = styled.div`
   padding: 24px 12px 12px;
