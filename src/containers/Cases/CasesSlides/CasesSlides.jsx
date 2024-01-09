@@ -1,4 +1,6 @@
 // import { Swiper, SwiperSlide } from 'swiper/react';
+// import { useState } from 'react';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
@@ -18,7 +20,12 @@ import {
   // ToggleButton,
 } from './CasesSlides.styled';
 
-const CasesSlides = ({ slidesPerView, slidesGap }) => {
+const CasesSlides = ({
+  slidesPerView,
+  slidesGap,
+  handleSwiper,
+  handleSlideChange,
+}) => {
   return (
     <>
       <CasesList
@@ -33,6 +40,8 @@ const CasesSlides = ({ slidesPerView, slidesGap }) => {
           clickable: true,
         }}
         loop
+        onSwiper={handleSwiper}
+        onSlideChange={handleSlideChange}
       >
         {slides.map(item => (
           <CasesItem key={item.id}>

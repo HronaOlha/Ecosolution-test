@@ -21,6 +21,14 @@ export const CasesList = styled(Swiper)`
 export const CasesItem = styled(SwiperSlide)`
   & > img {
     width: 100%;
+    height: 168px;
+
+    @media screen and (${({ theme }) => theme.media.tablet}) {
+      height: 168px;
+    }
+    @media screen and (${({ theme }) => theme.media.desktop}) {
+      height: 296px;
+    }
   }
 `;
 
