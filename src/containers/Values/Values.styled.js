@@ -73,6 +73,7 @@ export const ValuesGrid = styled.div`
         height: 16px;
         width: 16px;
 
+        stroke: ${({ theme }) => theme.colors.darkGreen};
         fill: transparent;
 
         @media screen and (${({ theme }) => theme.media.desktop}) {

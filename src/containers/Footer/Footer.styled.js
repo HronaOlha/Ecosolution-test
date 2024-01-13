@@ -72,6 +72,7 @@ export const Socials = styled.svg`
   height: 24px;
   width: 24px;
 
+  stroke: ${({ theme }) => theme.colors.darkGreen};
   fill: transparent;
   transition: stroke 400ms ease;
 

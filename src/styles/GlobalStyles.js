@@ -112,10 +112,6 @@ h3{
   canvas{
     display: block;
   }
-
-  svg{
-  stroke: ${({ theme }) => theme.colors.darkGreen};
-  }
   
   form
   input,

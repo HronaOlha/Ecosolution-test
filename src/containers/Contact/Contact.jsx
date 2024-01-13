@@ -8,7 +8,6 @@ import {
   ContactItem,
   ContactIcon,
   Socials,
-  // SocialsLink,
 } from './Contact.styled';
 
 const Contact = () => {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Header from './components/HeaderComponents/Header/Header';
+import Header from './containers/HeaderComponents/Header/Header';
 import Main from './containers/Main/Main';
 import Values from './containers/Values/Values';
 import Electricity from './containers/Electricity/Electricity';
@@ -36,14 +36,14 @@ function App() {
   return (
     <>
       <Header deviceType={deviceType} />
-      <main>
-        <Main />
-        <Values deviceType={deviceType} />
-        <Electricity />
-        <Cases deviceType={deviceType} />
-        <Faq />
-        <Contact />
-      </main>
+
+      <Main />
+      <Values deviceType={deviceType} />
+      <Electricity />
+      <Cases deviceType={deviceType} />
+      <Faq />
+      <Contact />
+
       <Footer />
     </>
   );
