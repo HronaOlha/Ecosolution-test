@@ -1,8 +1,17 @@
-import SliderOne from '../images/slide1.png';
-import SliderTwo from '../images/slide2.png';
-import SliderThree from '../images/slide3.png';
-import SliderFour from '../images/slide4.png';
-import SliderFive from '../images/slide5.png';
+import SliderOne from '../images/slide1-1x.jpg';
+import SliderOne2x from '../images/slide1-2x.jpg';
+
+import SliderTwo from '../images/slide2-1x.jpg';
+import SliderTwo2x from '../images/slide2-2x.jpg';
+
+import SliderThree from '../images/slide3-1x.jpg';
+import SliderThree2x from '../images/slide3-2x.jpg';
+
+import SliderFour from '../images/slide4-1x.jpg';
+import SliderFour2x from '../images/slide4-2x.jpg';
+
+import SliderFive from '../images/slide5-1x.jpg';
+import SliderFive2x from '../images/slide5-2x.jpg';
 
 export const links = [
   { id: 1, value: 'Main', link: '#main' },
@@ -44,6 +53,7 @@ export const slides = [
   {
     id: 0,
     image: SliderOne,
+    image2x: SliderOne2x,
     title: 'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
     text: 'Wind Power for auto field irrigation',
     date: 'July 2023',
@@ -51,6 +61,7 @@ export const slides = [
   {
     id: 1,
     image: SliderTwo,
+    image2x: SliderTwo2x,
     title: 'Zhytomyr city Private Enterprise “Bosch”',
     text: 'Solar Panels for industrial use',
     date: 'November 2023',
@@ -58,6 +69,7 @@ export const slides = [
   {
     id: 2,
     image: SliderThree,
+    image2x: SliderThree2x,
     title: 'Rivne city Private Enterprise “Biotech”',
     text: 'Thermal modules',
     date: 'October 2023',
@@ -65,6 +77,7 @@ export const slides = [
   {
     id: 3,
     image: SliderFour,
+    image2x: SliderFour2x,
     title: 'Kherson city Private Enterprise “HealthyFarm”',
     text: 'Wind power',
     date: 'September 2021',
@@ -72,6 +85,7 @@ export const slides = [
   {
     id: 4,
     image: SliderFive,
+    image2x: SliderFive2x,
     title: 'Zaporizhia city Private Enterprise “Biotech”',
     text: 'Mini nuclear stations',
     date: 'May 2021',

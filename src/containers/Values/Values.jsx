@@ -60,11 +60,6 @@ const Values = ({ deviceType }) => {
               alt="wind farms field"
               loading="lazy"
             />
-            <WorkerTab
-              src={workerDesk}
-              alt="worker by solar panels"
-              loading="lazy"
-            />
           </>
         )}
       </ValuesGrid>

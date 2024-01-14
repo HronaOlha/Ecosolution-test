@@ -38,7 +38,13 @@ const CasesSlides = ({
     >
       {slides.map(item => (
         <CasesItem key={item.id}>
-          <img src={item.image} alt={item.title} loading="lazy" />
+          {/* <img src={item.image} alt={item.title} loading="lazy" /> */}
+          <img
+            src={item.image}
+            srcSet={`${item.image} 1x, ${item.image2x} 2x`}
+            alt={item.title}
+            loading="lazy"
+          />
           <CasesThumb>
             <MainInfoBox>
               <h4>{item.title}</h4>
