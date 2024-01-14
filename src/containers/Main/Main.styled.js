@@ -1,24 +1,13 @@
 import styled from 'styled-components';
 import { Line } from '../../components/HorizontalLine/HorizontalLine.styled';
 
-// import windTurbineMob from '../../images/wind-turbine-mob.png';
-// import windTurbineTab from '../../images/wind-turbine-tab.png';
-// import windTurbineDesk from '../../images/wind-turbine-desk.png';
-
 export const MainSection = styled.section`
   padding-top: 222px;
 
   @media screen and (${({ theme }) => theme.media.tablet}) {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(2, 1fr);
 
-    /* grid-template-areas:
-      'heading heading text text'
-      'heading heading button button'
-      'line line line line'
-      'mainContacts mainContacts mainContacts mainContacts'
-      'mainImage mainImage mainImage mainImage'; */
     grid-template-areas:
       'heading text'
       'heading button'
@@ -127,29 +116,7 @@ export const Address = styled.p`
   margin-bottom: 8px;
 `;
 
-// export const MainImage = styled.div`
-//   margin: 0 auto;
-//   height: 200px;
-
-//   background-image: url(${windTurbineMob});
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-
-//   @media screen and (${({ theme }) => theme.media.tablet}) {
-//     grid-area: mainImage;
-//     height: 348px;
-//     width: 100%;
-//     background-image: url(${windTurbineTab});
-//   }
-//   @media screen and (${({ theme }) => theme.media.desktop}) {
-//     height: 524px;
-//     background-image: url(${windTurbineDesk});
-//   }
-// `;
-
-export const Image = styled.img`
-  /* display: inline-block; */
+export const Picture = styled.picture`
   margin: 0 auto;
 
   height: 200px;
