@@ -1,32 +1,41 @@
 {
   "files": {
     "main.css": "/Ecosolution-test/static/css/main.afe73c40.css",
-    "main.js": "/Ecosolution-test/static/js/main.ef0680b4.js",
+    "main.js": "/Ecosolution-test/static/js/main.4fe29b01.js",
     "static/media/wind-turbine-desk-2x.jpg": "/Ecosolution-test/static/media/wind-turbine-desk-2x.e2966ee4b36914098683.jpg",
-    "static/media/worker-by-solar-panels-desk.png": "/Ecosolution-test/static/media/worker-by-solar-panels-desk.e116f892caf85530cfbf.png",
-    "static/media/wind-farms-desk.png": "/Ecosolution-test/static/media/wind-farms-desk.f5ce6a656f12b1e7287a.png",
+    "static/media/slide2-2x.jpg": "/Ecosolution-test/static/media/slide2-2x.2ccc0faae6402aa120b2.jpg",
     "static/media/wind-turbine-tab-2x.jpg": "/Ecosolution-test/static/media/wind-turbine-tab-2x.5ccc5c56890506dcf5d7.jpg",
     "static/media/wind-turbine-desk-1x.jpg": "/Ecosolution-test/static/media/wind-turbine-desk-1x.23aaf0db35a646b4a2cc.jpg",
+    "static/media/slide4-2x.jpg": "/Ecosolution-test/static/media/slide4-2x.50bc429d88e9fe59bbd0.jpg",
+    "static/media/slide1-2x.jpg": "/Ecosolution-test/static/media/slide1-2x.e6b202b3339c8e992092.jpg",
+    "static/media/slide5-2x.jpg": "/Ecosolution-test/static/media/slide5-2x.43fc639452de97b2d4e3.jpg",
+    "static/media/slide3-2x.jpg": "/Ecosolution-test/static/media/slide3-2x.7b676dafa9c6eeec8542.jpg",
+    "static/media/worker-by-solar-panels-desk-2x.jpg": "/Ecosolution-test/static/media/worker-by-solar-panels-desk-2x.78e05ff9f7897e8d0090.jpg",
     "static/media/wind-turbine-tab-1x.jpg": "/Ecosolution-test/static/media/wind-turbine-tab-1x.71718c8e0ae72402949d.jpg",
-    "static/media/slide2.png": "/Ecosolution-test/static/media/slide2.37944f2ecfb074bdb0e2.png",
-    "static/media/wind-farms-tab.png": "/Ecosolution-test/static/media/wind-farms-tab.49b54a94d4f92496190d.png",
-    "static/media/worker-by-solar-panels-tab.png": "/Ecosolution-test/static/media/worker-by-solar-panels-tab.b84f6a97b3b19e40f8af.png",
-    "static/media/slide5.png": "/Ecosolution-test/static/media/slide5.e78e62441affadd70a6f.png",
-    "static/media/slide1.png": "/Ecosolution-test/static/media/slide1.068fa68bf1b21ddc9e2e.png",
-    "static/media/slide3.png": "/Ecosolution-test/static/media/slide3.a333680f9ef8eaed698e.png",
-    "static/media/slide4.png": "/Ecosolution-test/static/media/slide4.5a9e8943f1506e961ea6.png",
+    "static/media/slide2-1x.jpg": "/Ecosolution-test/static/media/slide2-1x.4d3651cc0e662f817b67.jpg",
+    "static/media/slide3-1x.jpg": "/Ecosolution-test/static/media/slide3-1x.888a16f8e71b4e35662a.jpg",
+    "static/media/slide5-1x.jpg": "/Ecosolution-test/static/media/slide5-1x.914cb04a9b1f585e6c42.jpg",
+    "static/media/wind-farms-desk-2x.jpg": "/Ecosolution-test/static/media/wind-farms-desk-2x.435773b81ff1095ffd16.jpg",
+    "static/media/slide1-1x.jpg": "/Ecosolution-test/static/media/slide1-1x.629f01d07a539e6d6498.jpg",
     "static/media/wind-turbine-mob-2x.jpg": "/Ecosolution-test/static/media/wind-turbine-mob-2x.6b2d34f6555249cc1f1e.jpg",
+    "static/media/worker-by-solar-panels-desk-1x.jpg": "/Ecosolution-test/static/media/worker-by-solar-panels-desk-1x.df545e7ce44211f5f79d.jpg",
+    "static/media/wind-farms-desk-1x.jpg": "/Ecosolution-test/static/media/wind-farms-desk-1x.ace01afabcc493bdba6e.jpg",
+    "static/media/slide4-1x.jpg": "/Ecosolution-test/static/media/slide4-1x.36752e76c37181dcce23.jpg",
+    "static/media/worker-by-solar-panels-tab-2x.jpg": "/Ecosolution-test/static/media/worker-by-solar-panels-tab-2x.ab26d165f23500b3cdeb.jpg",
     "static/media/wind-turbine-mob-1x.jpg": "/Ecosolution-test/static/media/wind-turbine-mob-1x.8c2377560fea128cc3e3.jpg",
+    "static/media/wind-farms-tab-2x.jpg": "/Ecosolution-test/static/media/wind-farms-tab-2x.42cf48318c570ff12d98.jpg",
+    "static/media/wind-farms-tab-1x.jpg": "/Ecosolution-test/static/media/wind-farms-tab-1x.60a5298caf6cadcea2a4.jpg",
+    "static/media/worker-by-solar-panels-tab-1x.jpg": "/Ecosolution-test/static/media/worker-by-solar-panels-tab-1x.d6597ffb1a5dae51e787.jpg",
     "static/media/sprite.svg": "/Ecosolution-test/static/media/sprite.ec0f06ec3afd3ff7be833fe953daca1b.svg",
     "static/media/slogan.svg": "/Ecosolution-test/static/media/slogan.1b50a889404b85fa44721514bbd50854.svg",
     "static/media/emblem.svg": "/Ecosolution-test/static/media/emblem.d20ccdf9d8331a477f8f05b76cdb4dbc.svg",
     "static/media/ecosolution.svg": "/Ecosolution-test/static/media/ecosolution.5230cb5c917679492e74a619f842019d.svg",
     "index.html": "/Ecosolution-test/index.html",
     "main.afe73c40.css.map": "/Ecosolution-test/static/css/main.afe73c40.css.map",
-    "main.ef0680b4.js.map": "/Ecosolution-test/static/js/main.ef0680b4.js.map"
+    "main.4fe29b01.js.map": "/Ecosolution-test/static/js/main.4fe29b01.js.map"
   },
   "entrypoints": [
     "static/css/main.afe73c40.css",
-    "static/js/main.ef0680b4.js"
+    "static/js/main.4fe29b01.js"
   ]
 }
