@@ -116,10 +116,10 @@ export const ValuesGrid = styled.div`
   }
 `;
 
-export const WindFarmImg = styled.img`
+export const WindFarmImg = styled.picture`
   grid-area: windFarmImg;
 `;
 
-export const WorkerTab = styled.img`
+export const WorkerTab = styled.picture`
   grid-area: workerTab;
 `;

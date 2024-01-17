@@ -2,10 +2,15 @@ import PropTypes from 'prop-types';
 
 import sprite from '../../images/sprite.svg';
 import { values } from '../../constants/constants';
-import windFarmTab from '../../images/wind-farms-tab.png';
-import windFarmDesk from '../../images/wind-farms-desk.png';
-import workerTab from '../../images/worker-by-solar-panels-tab.png';
-import workerDesk from '../../images/worker-by-solar-panels-desk.png';
+
+import windFarmTab1x from '../../images/wind-farms-tab-1x.jpg';
+import windFarmTab2x from '../../images/wind-farms-tab-2x.jpg';
+import windFarmDesk1x from '../../images/wind-farms-desk-1x.jpg';
+import windFarmDesk2x from '../../images/wind-farms-desk-2x.jpg';
+import workerTab1x from '../../images/worker-by-solar-panels-tab-1x.jpg';
+import workerTab2x from '../../images/worker-by-solar-panels-tab-2x.jpg';
+import workerDesk1x from '../../images/worker-by-solar-panels-desk-1x.jpg';
+import workerDesk2x from '../../images/worker-by-solar-panels-desk-2x.jpg';
 
 import {
   ValuesTexts,
@@ -39,27 +44,32 @@ const Values = ({ deviceType }) => {
             <p>{item.text}</p>
           </div>
         ))}
-        {deviceType === 'tablet' && (
+
+        {(deviceType === 'tablet' || deviceType === 'desktop') && (
           <>
-            <WindFarmImg
-              src={windFarmTab}
-              alt="wind farms field"
-              loading="lazy"
-            />
-            <WorkerTab
-              src={workerTab}
-              alt="worker by solar panels"
-              loading="lazy"
-            />
-          </>
-        )}
-        {deviceType === 'desktop' && (
-          <>
-            <WindFarmImg
-              src={windFarmDesk}
-              alt="wind farms field"
-              loading="lazy"
-            />
+            <WindFarmImg>
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${windFarmDesk1x} 1x, ${windFarmDesk2x} 2x`}
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet={`${windFarmTab1x} 1x, ${windFarmTab2x} 2x`}
+              />
+              <img src={windFarmDesk2x} alt="wind farms field" loading="lazy" />
+            </WindFarmImg>
+
+            <WorkerTab>
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${workerDesk1x} 1x, ${workerDesk2x} 2x`}
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet={`${workerTab1x} 1x, ${workerTab2x} 2x`}
+              />
+              <img src={workerDesk2x} alt="wind farms field" loading="lazy" />
+            </WorkerTab>
           </>
         )}
       </ValuesGrid>
