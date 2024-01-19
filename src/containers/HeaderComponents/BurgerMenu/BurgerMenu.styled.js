@@ -131,14 +131,15 @@ export const SocialsContainer = styled.div`
   }
 `;
 
-export const Socials = styled.svg`
+export const Socials = styled.a`
   height: 24px;
   width: 24px;
+
+  stroke: ${({ theme }) => theme.colors.darkGreen};
   fill: transparent;
   transition: stroke 400ms ease;
-  stroke: ${({ theme }) => theme.colors.white};
 
-  ${SocialsContainer}:focus &,
+  &:focus > svg,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }

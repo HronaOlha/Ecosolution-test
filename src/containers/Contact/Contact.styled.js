@@ -114,9 +114,13 @@ export const Socials = styled.div`
     padding-left: 0;
   }
 
+  & a:focus .focus-visible {
+    stroke: ${({ theme }) => theme.colors.mainGreen};
+  }
+  /* 
   &:focus-within {
     .focus-visible {
       stroke: ${({ theme }) => theme.colors.mainGreen};
     }
-  }
+  } */
 `;

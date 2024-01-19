@@ -68,7 +68,7 @@ export const SocialsContainer = styled.div`
   }
 `;
 
-export const Socials = styled.svg`
+export const Socials = styled.a`
   height: 24px;
   width: 24px;
 
@@ -76,11 +76,26 @@ export const Socials = styled.svg`
   fill: transparent;
   transition: stroke 400ms ease;
 
-  &:focus,
+  &:focus > svg,
   &:hover {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }
 `;
+
+// export const Socials = styled.svg`
+//   height: 24px;
+//   width: 24px;
+
+//   stroke: ${({ theme }) => theme.colors.darkGreen};
+//   fill: transparent;
+//   transition: stroke 400ms ease;
+
+//   &:focus,
+//   &:hover {
+//     /* stroke: ${({ theme }) => theme.colors.mainGreen}; */
+//     /* stroke: yellow; */
+//   }
+// `;
 
 // Additional styling of styled-components Component
 export const FooterLine = styled(Line)`

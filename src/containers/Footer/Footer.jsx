@@ -24,16 +24,16 @@ const Footer = () => {
       </ButtonUp>
 
       <SocialsContainer>
-        <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-          <Socials className="facebook" aria-label="facebook">
+        <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
+          <svg aria-label="facebook" height={24} width={24}>
             <use href={sprite + '#facebook'} />
-          </Socials>
-        </a>
-        <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-          <Socials aria-label="instagram">
+          </svg>
+        </Socials>
+        <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
+          <svg aria-label="instagram" height={24} width={24}>
             <use href={sprite + '#instagram'} />
-          </Socials>
-        </a>
+          </svg>
+        </Socials>
       </SocialsContainer>
 
       <ContactInfo gap={'16px'} />

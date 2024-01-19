@@ -37,16 +37,16 @@ const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
           </PointsList>
         </div>
         <SocialsContainer>
-          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-            <Socials className="facebook">
+          <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
+            <svg height={24} width={24}>
               <use href={sprite + '#facebook'} color="red" />
-            </Socials>
-          </a>
-          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-            <Socials>
+            </svg>
+          </Socials>
+          <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
+            <svg height={24} width={24}>
               <use href={sprite + '#instagram'} />
-            </Socials>
-          </a>
+            </svg>
+          </Socials>
         </SocialsContainer>
       </BurgerContainer>
     </Overlay>
