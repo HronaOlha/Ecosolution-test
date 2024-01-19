@@ -28,8 +28,6 @@ const onSubmit = async (values, actions) => {
   );
 };
 
-// JSON.stringify(values, null, 2);
-
 const ContactForm = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({

@@ -129,7 +129,6 @@ header,
 section,
 footer {
   margin: 0 auto;
-  /* padding: 18px 20px; */
   padding: 42px 20px 0;
 
    max-width: 480px;

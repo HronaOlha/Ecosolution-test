@@ -27,7 +27,7 @@ export const BurgerContainer = styled.div`
   top: 36px;
   right: 20px;
   height: 90svh;
-  /* bottom: 100px; */
+
   z-index: 1000;
 
   display: flex;

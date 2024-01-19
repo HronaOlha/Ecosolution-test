@@ -82,21 +82,6 @@ export const Socials = styled.a`
   }
 `;
 
-// export const Socials = styled.svg`
-//   height: 24px;
-//   width: 24px;
-
-//   stroke: ${({ theme }) => theme.colors.darkGreen};
-//   fill: transparent;
-//   transition: stroke 400ms ease;
-
-//   &:focus,
-//   &:hover {
-//     /* stroke: ${({ theme }) => theme.colors.mainGreen}; */
-//     /* stroke: yellow; */
-//   }
-// `;
-
 // Additional styling of styled-components Component
 export const FooterLine = styled(Line)`
   @media screen and (${({ theme }) => theme.media.tablet}) {

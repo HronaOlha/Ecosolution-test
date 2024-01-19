@@ -117,10 +117,4 @@ export const Socials = styled.div`
   & a:focus .focus-visible {
     stroke: ${({ theme }) => theme.colors.mainGreen};
   }
-  /* 
-  &:focus-within {
-    .focus-visible {
-      stroke: ${({ theme }) => theme.colors.mainGreen};
-    }
-  } */
 `;

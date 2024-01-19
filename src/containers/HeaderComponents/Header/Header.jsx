@@ -74,11 +74,9 @@ const Header = ({ deviceType }) => {
           >
             <IoIosMenu size="100%" />
           </BurgerBtn>
-          {deviceType === 'tablet' && <ContactBtn text="Get in touch" />}
-          {deviceType === 'desktop' && <ContactBtn text="Get in touch" />}
-          {/* {(deviceType === 'tablet' || deviceType === 'desktop') && (
+          {(deviceType === 'tablet' || deviceType === 'desktop') && (
             <ContactBtn text="Get in touch" />
-          )} */}
+          )}
         </Nav>
       </HeaderSection>
       {isMenuOpen && (
